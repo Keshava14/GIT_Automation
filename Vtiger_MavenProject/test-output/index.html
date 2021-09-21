@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\USER\AppData\Local\Temp\testng-eclipse-158751767\testng-customsuite.xml</span>
+                    <span>C:\Users\USER\AppData\Local\Temp\testng-eclipse-771365587\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Default_suite">
-                    <span>2 groups</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.vtiger.testscripts.CreateNewContact" hash-for-method="newCreateContact">newCreateContact</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.Comcast.ContactsTest.Contact" hash-for-method="createContactTest">createContactTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.Comcast.ContactsTest.Contact" hash-for-method="createContactWithOgTest">createContactWithOgTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.Comcast.ContactsTest.Contact" hash-for-method="deleteContactTest">deleteContactTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +130,28 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.vtiger.testscripts.CreateNewContact</span>
+              <span class="class-name">com.Comcast.ContactsTest.Contact</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="newCreateContact">
-                  </a> <!-- newCreateContact -->
-                  <span class="method-name">newCreateContact</span>
+                  <a name="createContactTest">
+                  </a> <!-- createContactTest -->
+                  <span class="method-name">createContactTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createContactWithOgTest">
+                  </a> <!-- createContactWithOgTest -->
+                  <span class="method-name">createContactWithOgTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteContactTest">
+                  </a> <!-- deleteContactTest -->
+                  <span class="method-name">deleteContactTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +159,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\USER\AppData\Local\Temp\testng-eclipse-158751767\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\USER\AppData\Local\Temp\testng-eclipse-771365587\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +168,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.vtiger.testscripts.CreateNewContact&quot;/&gt;
+      &lt;class name=&quot;com.Comcast.ContactsTest.Contact&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -168,22 +192,6 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">smoke</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">newCreateContact</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">system</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">newCreateContact</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -200,16 +208,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'newCreateContact')
-data.setCell(0, 2, 'com.vtiger.testscripts.CreateNewContact')
-data.setCell(0, 3, 10369);
+data.setCell(0, 1, 'createContactTest')
+data.setCell(0, 2, 'com.Comcast.ContactsTest.Contact')
+data.setCell(0, 3, 16);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'createContactWithOgTest')
+data.setCell(1, 2, 'com.Comcast.ContactsTest.Contact')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'deleteContactTest')
+data.setCell(2, 2, 'com.Comcast.ContactsTest.Contact')
+data.setCell(2, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 16 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -235,27 +251,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.vtiger.testscripts.CreateNewContact</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">lanuchBrowser</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">login</span>
-                <span class="method-start">2598 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="chronological-class-name">com.Comcast.ContactsTest.Contact</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">newCreateContact</span>
-                <span class="method-start">7718 ms</span>
+                <span class="method-name">createContactTest</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logout</span>
-                <span class="method-start">18092 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">20652 ms</span>
-              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">createContactWithOgTest</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteContactTest</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
